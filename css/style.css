@@ -1,0 +1,246 @@
+:root {
+  --primary: #0ea5e9;
+  --secondary: #1e40af;
+  --dark: #0f172a;
+  --light-dark: #1e293b;
+  --text: #334155;
+  --white: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: var(--text);
+  background: #f8fafc;
+}
+
+.custom-navbar {
+  background: rgba(15, 23, 42, 0.95);
+  backdrop-filter: blur(12px);
+}
+
+.hero-section {
+  background:
+    linear-gradient(135deg, rgba(15, 23, 42, 0.96), rgba(30, 64, 175, 0.90)),
+    radial-gradient(circle at top right, #0ea5e9, transparent 35%);
+  color: white;
+}
+
+.hero-badge {
+  background: rgba(14, 165, 233, 0.15);
+  color: #7dd3fc;
+  border: 1px solid rgba(125, 211, 252, 0.35);
+  padding: 10px 16px;
+  border-radius: 30px;
+}
+
+.hero-title {
+  font-size: 58px;
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.hero-title span {
+  color: #38bdf8;
+}
+
+.hero-subtitle {
+  font-size: 28px;
+  font-weight: 600;
+  margin-top: 16px;
+}
+
+.hero-text {
+  font-size: 18px;
+  margin: 24px 0;
+  color: #cbd5e1;
+  max-width: 700px;
+}
+
+.btn-primary-custom {
+  background: var(--primary);
+  color: white;
+  padding: 12px 26px;
+  border-radius: 30px;
+  font-weight: 600;
+  border: none;
+}
+
+.btn-outline-custom {
+  color: white;
+  border: 1px solid #7dd3fc;
+  padding: 12px 26px;
+  border-radius: 30px;
+  font-weight: 600;
+  margin-left: 10px;
+}
+
+.btn-outline-custom:hover,
+.btn-primary-custom:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+.profile-card {
+  background: rgba(255, 255, 255, 0.10);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 26px;
+  padding: 45px 25px;
+  backdrop-filter: blur(16px);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.25);
+}
+
+.profile-icon {
+  width: 110px;
+  height: 110px;
+  margin: 0 auto 25px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #0ea5e9, #1e40af);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 44px;
+}
+
+.section-padding {
+  padding: 90px 0;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.section-title h2 {
+  font-size: 36px;
+  font-weight: 800;
+  color: var(--dark);
+}
+
+.section-title p {
+  color: #64748b;
+}
+
+.dark-section {
+  background: var(--dark);
+  color: white;
+}
+
+.dark-section .section-title h2 {
+  color: white;
+}
+
+.dark-section .section-title p {
+  color: #cbd5e1;
+}
+
+.about-card,
+.project-card,
+.contact-box {
+  background: white;
+  border-radius: 22px;
+  padding: 35px;
+  box-shadow: 0 15px 40px rgba(15, 23, 42, 0.08);
+}
+
+.about-card p,
+.project-card p {
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.skill-card,
+.work-card {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 18px;
+  padding: 28px 20px;
+  text-align: center;
+  height: 100%;
+  transition: 0.3s;
+}
+
+.skill-card:hover,
+.work-card:hover {
+  transform: translateY(-7px);
+  background: rgba(14, 165, 233, 0.18);
+}
+
+.skill-card i,
+.work-card i {
+  font-size: 38px;
+  color: #38bdf8;
+  margin-bottom: 16px;
+}
+
+.project-card h3 {
+  color: var(--dark);
+  font-weight: 800;
+}
+
+.project-tags span {
+  display: inline-block;
+  background: #e0f2fe;
+  color: #0369a1;
+  padding: 8px 14px;
+  border-radius: 30px;
+  margin: 6px 5px 0 0;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.feature-list {
+  list-style: none;
+  padding: 0;
+}
+
+.feature-list li {
+  background: #f1f5f9;
+  margin-bottom: 10px;
+  padding: 12px 14px;
+  border-radius: 12px;
+  font-weight: 600;
+}
+
+.contact-box {
+  max-width: 650px;
+  margin: auto;
+  text-align: center;
+}
+
+.contact-box p {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.contact-box i {
+  color: var(--primary);
+  margin-right: 10px;
+}
+
+footer {
+  background: var(--dark);
+  color: #cbd5e1;
+  text-align: center;
+  padding: 22px;
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 40px;
+  }
+
+  .hero-subtitle {
+    font-size: 22px;
+  }
+
+  .btn-outline-custom {
+    margin-left: 0;
+    margin-top: 12px;
+  }
+}
