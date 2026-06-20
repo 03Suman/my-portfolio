@@ -1,0 +1,604 @@
+/* ==================================================
+   Portfolio Responsive CSS
+   File: css/responsive.css
+================================================== */
+
+/* Prevent horizontal scroll */
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+/* Better anchor scroll with fixed navbar */
+section,
+header {
+  scroll-margin-top: 90px;
+}
+
+/* Images responsive globally */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Buttons smooth */
+a,
+button {
+  transition: all 0.3s ease;
+}
+
+/* ==================================================
+   Large Tablets
+================================================== */
+
+@media (max-width: 1199px) {
+  .hero-title {
+    font-size: 50px;
+  }
+
+  .hero-subtitle {
+    font-size: 25px;
+  }
+
+  .section-title h2,
+  .about-title h2,
+  .skills-title h2,
+  .projects-title h2 {
+    font-size: 36px;
+  }
+
+  .featured-project-card {
+    padding: 28px;
+  }
+}
+
+/* ==================================================
+   Tablets and Small Laptops
+================================================== */
+
+@media (max-width: 991px) {
+  body {
+    padding-top: 0;
+  }
+
+  .section-padding {
+    padding: 70px 0;
+  }
+
+  /* Navbar */
+  .custom-navbar {
+    padding: 10px 0;
+  }
+
+  .brand-logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 12px;
+    font-size: 14px;
+  }
+
+  .brand-text strong {
+    font-size: 16px;
+  }
+
+  .brand-text small {
+    display: none;
+  }
+
+  .navbar-collapse {
+    max-height: calc(100vh - 80px);
+    overflow-y: auto;
+  }
+
+  /* Hero */
+  .hero-section {
+    padding-top: 95px;
+    text-align: center;
+  }
+
+  .hero-section .min-vh-100 {
+    min-height: auto !important;
+    padding: 60px 0 70px;
+  }
+
+  .hero-title {
+    font-size: 44px;
+  }
+
+  .hero-subtitle {
+    font-size: 23px;
+  }
+
+  .hero-text {
+    max-width: 100%;
+    font-size: 17px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .btn-outline-custom {
+    margin-left: 0;
+  }
+
+  .profile-card {
+    max-width: 420px;
+    margin: 0 auto;
+    padding: 35px 24px;
+  }
+
+  /* About */
+  .about-main-card {
+    padding: 30px;
+  }
+
+  .about-side-grid {
+    margin-top: 0;
+  }
+
+  .about-tech-strip {
+    justify-content: center;
+  }
+
+  /* Skills */
+  .skills-work-strip {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .skills-work-icon {
+    width: 72px;
+    height: 72px;
+    min-width: 72px;
+    font-size: 28px;
+  }
+
+  /* Projects */
+  .project-top-row {
+    flex-direction: column;
+  }
+
+  .project-logo-box {
+    width: 100%;
+    min-width: 100%;
+  }
+
+  .project-showcase-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .showcase-large,
+  .showcase-small {
+    min-height: 270px;
+  }
+
+  .project-gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .gallery-heading {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .gallery-heading p {
+    max-width: 100%;
+  }
+}
+
+/* ==================================================
+   Mobile Devices
+================================================== */
+
+@media (max-width: 767px) {
+  .container {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .section-padding {
+    padding: 58px 0;
+  }
+
+  .section-title {
+    margin-bottom: 32px;
+  }
+
+  .section-title h2,
+  .about-title h2,
+  .skills-title h2,
+  .projects-title h2 {
+    font-size: 29px;
+    line-height: 1.25;
+  }
+
+  .section-title p,
+  .about-title p,
+  .skills-title p,
+  .projects-title p {
+    font-size: 15.5px;
+    line-height: 1.7;
+  }
+
+  .section-subtitle {
+    font-size: 12px;
+    padding: 7px 14px;
+  }
+
+  /* Hero */
+  .hero-section {
+    background:
+      linear-gradient(135deg, rgba(15, 23, 42, 0.98), rgba(30, 64, 175, 0.92)),
+      radial-gradient(circle at top right, rgba(14, 165, 233, 0.75), transparent 45%);
+  }
+
+  .hero-section .min-vh-100 {
+    padding: 45px 0 55px;
+  }
+
+  .hero-badge {
+    font-size: 12px;
+    padding: 8px 12px;
+    white-space: normal;
+    line-height: 1.5;
+  }
+
+  .hero-title {
+    font-size: 36px;
+    line-height: 1.15;
+  }
+
+  .hero-subtitle {
+    font-size: 20px;
+    line-height: 1.45;
+  }
+
+  .hero-text {
+    font-size: 15.5px;
+    line-height: 1.8;
+  }
+
+  .hero-buttons .btn,
+  .btn-primary-custom,
+  .btn-outline-custom {
+    width: 100%;
+    max-width: 280px;
+    padding: 12px 18px;
+  }
+
+  .profile-card {
+    border-radius: 22px;
+    padding: 30px 20px;
+  }
+
+  .profile-icon {
+    width: 86px;
+    height: 86px;
+    font-size: 34px;
+  }
+
+  .profile-card h4 {
+    font-size: 20px;
+  }
+
+  .profile-card p {
+    font-size: 14px;
+  }
+
+  /* About */
+  .about-main-card {
+    padding: 24px;
+    border-radius: 22px;
+  }
+
+  .about-main-card h3 {
+    font-size: 24px;
+  }
+
+  .about-main-card p {
+    font-size: 15px;
+    line-height: 1.8;
+  }
+
+  .about-actions {
+    flex-direction: column;
+  }
+
+  .about-btn-primary,
+  .about-btn-secondary {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .about-info-card {
+    padding: 18px;
+    border-radius: 18px;
+  }
+
+  .about-icon {
+    width: 46px;
+    height: 46px;
+    min-width: 46px;
+    font-size: 18px;
+  }
+
+  .about-info-card h5 {
+    font-size: 16px;
+  }
+
+  .about-info-card p {
+    font-size: 13.5px;
+  }
+
+  .about-tech-strip {
+    padding: 16px;
+    justify-content: flex-start;
+    border-radius: 20px;
+  }
+
+  .about-tech-strip span {
+    font-size: 12.5px;
+    padding: 8px 12px;
+  }
+
+  /* Skills */
+  .skill-highlight-card,
+  .skill-category-card {
+    padding: 22px;
+    border-radius: 20px;
+  }
+
+  .skill-highlight-icon,
+  .skill-category-icon {
+    width: 50px;
+    height: 50px;
+    min-width: 50px;
+    font-size: 20px;
+  }
+
+  .skill-highlight-card h4,
+  .skill-category-head h4 {
+    font-size: 18px;
+  }
+
+  .skill-highlight-card p,
+  .skill-category-head p {
+    font-size: 14px;
+  }
+
+  .skill-tags span {
+    font-size: 12.5px;
+    padding: 7px 11px;
+  }
+
+  .skills-work-strip {
+    padding: 24px;
+    border-radius: 22px;
+  }
+
+  .skills-work-content h3 {
+    font-size: 22px;
+    line-height: 1.35;
+  }
+
+  .skills-work-content p {
+    font-size: 14.5px;
+  }
+
+  /* Projects */
+  .featured-project-card {
+    padding: 22px;
+    border-radius: 24px;
+  }
+
+  .project-top-row h3 {
+    font-size: 25px;
+  }
+
+  .project-top-row p {
+    font-size: 15px;
+    line-height: 1.75;
+  }
+
+  .project-status {
+    font-size: 12px;
+    padding: 8px 12px;
+  }
+
+  .project-logo-box {
+    padding: 20px;
+    border-radius: 20px;
+  }
+
+  .project-logo-box i {
+    font-size: 34px;
+  }
+
+  .showcase-large,
+  .showcase-small {
+    min-height: 230px;
+    border-radius: 20px;
+  }
+
+  .showcase-overlay,
+  .showcase-small div {
+    left: 12px;
+    right: 12px;
+    bottom: 12px;
+    padding: 13px;
+    border-radius: 15px;
+  }
+
+  .showcase-overlay h4 {
+    font-size: 17px;
+  }
+
+  .showcase-small h5 {
+    font-size: 14px;
+  }
+
+  .project-module-card,
+  .personal-project-card {
+    padding: 22px;
+    border-radius: 20px;
+  }
+
+  .project-module-card h4,
+  .personal-project-card h4 {
+    font-size: 19px;
+  }
+
+  .project-module-card p,
+  .personal-project-card p {
+    font-size: 14.5px;
+  }
+
+  .project-tech-stack {
+    padding: 16px;
+    border-radius: 20px;
+  }
+
+  .project-tech-stack span {
+    font-size: 12.5px;
+    padding: 8px 12px;
+  }
+
+  .gallery-heading h3 {
+    font-size: 24px;
+    line-height: 1.3;
+  }
+
+  .project-gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-card {
+    height: 215px;
+    border-radius: 20px;
+  }
+
+  .gallery-caption {
+    font-size: 13px;
+  }
+
+  /* Experience */
+  .work-card {
+    padding: 24px 18px;
+    border-radius: 18px;
+  }
+
+  .work-card h5 {
+    font-size: 18px;
+  }
+
+  .work-card p {
+    font-size: 14.5px;
+  }
+
+  /* Contact */
+  .contact-box {
+    padding: 24px 18px;
+    border-radius: 20px;
+  }
+
+  .contact-box p {
+    font-size: 15px;
+    word-break: break-word;
+  }
+
+  footer {
+    padding: 18px 12px;
+  }
+
+  footer p {
+    font-size: 13.5px;
+    line-height: 1.6;
+    margin: 0;
+  }
+}
+
+/* ==================================================
+   Extra Small Phones
+================================================== */
+
+@media (max-width: 420px) {
+  .container {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  .brand-wrap {
+    gap: 9px;
+  }
+
+  .brand-logo {
+    width: 36px;
+    height: 36px;
+    font-size: 12px;
+  }
+
+  .brand-text strong {
+    font-size: 14px;
+  }
+
+  .hero-title {
+    font-size: 31px;
+  }
+
+  .hero-subtitle {
+    font-size: 18px;
+  }
+
+  .hero-text {
+    font-size: 14.5px;
+  }
+
+  .section-title h2,
+  .about-title h2,
+  .skills-title h2,
+  .projects-title h2 {
+    font-size: 25px;
+  }
+
+  .about-main-card,
+  .skill-highlight-card,
+  .skill-category-card,
+  .project-module-card,
+  .personal-project-card,
+  .contact-box {
+    padding: 20px;
+  }
+
+  .about-info-card {
+    gap: 12px;
+  }
+
+  .about-icon {
+    width: 42px;
+    height: 42px;
+    min-width: 42px;
+  }
+
+  .featured-project-card {
+    padding: 18px;
+  }
+
+  .project-top-row h3 {
+    font-size: 23px;
+  }
+
+  .showcase-large,
+  .showcase-small,
+  .gallery-card {
+    min-height: 200px;
+    height: 200px;
+  }
+}
