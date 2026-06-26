@@ -600,5 +600,47 @@ button {
   .gallery-card {
     min-height: 200px;
     height: 200px;
+    padding: 8px;
+  }
+}
+
+
+
+
+@media (max-width: 991px) {
+  .showcase-large,
+  .showcase-small {
+    height: 280px;
+  }
+}
+
+@media (max-width: 576px) {
+  .showcase-large,
+  .showcase-small {
+    height: 230px;
+    padding: 8px;
+    border-radius: 20px;
+  }
+
+  .showcase-large img,
+  .showcase-small img {
+    border-radius: 14px;
+  }
+
+  .showcase-overlay,
+  .showcase-small div {
+    left: 14px;
+    right: 14px;
+    bottom: 14px;
+    padding: 12px;
+    border-radius: 14px;
+  }
+
+  .showcase-overlay h4 {
+    font-size: 15px;
+  }
+
+  .showcase-small div h5 {
+    font-size: 13px;
   }
 }
